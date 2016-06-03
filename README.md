@@ -13,6 +13,7 @@ On Ubuntu 14.04
 - `cp tools/build/example/user-config.jam $HOME`
 - `echo "using gcc : 4.8.2 : i686-w64-mingw32-g++ ;" >> $HOME/user-config.jam`
 - Configure and prepare build:
+    
     ```
     ./bootstrap.sh mingw \
         toolset=gcc-mingw \
@@ -24,6 +25,7 @@ On Ubuntu 14.04
         --prefix=/usr/i686-w64-mingw32
     ```
 - Build and install
+    
     ```
     ./b2 install \
         toolset=gcc-mingw \
